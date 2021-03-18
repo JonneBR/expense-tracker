@@ -2,7 +2,6 @@ import React from 'react';
 
 export const Transaction = ({ transaction }) => {
   const sign = transaction.amount < 0 ? '-' : '+';
-  console.log(sign);
 
   return (
     <li className={transaction.amount > 0 ? 'plus' : 'minus'}>
